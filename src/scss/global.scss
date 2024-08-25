@@ -1,6 +1,38 @@
+$background-color--dark: #17171C;
+$text-color--dark: #ffffff;
+$second-text--dark: #ffffff;
+$special-btn--dark: #4E505F;
+$number-btn--dark: #2E2F38;
+
+$background-color--light: #F1F2F3;
+$text-color--light: #000000;
+$second-text--light: #000000;
+$special-btn--light: #D2D3DA;
+$number-btn--light: #ffffff;
+
+.dark-theme {
+  --background-color: #{$background-color--dark};
+  --text-color: #{$text-color--dark};
+  --second-text-color: #{$second-text--dark};
+  --special-btn: #{$special-btn--dark};
+  --number-btn: #{$number-btn--dark}
+}
+.light-theme {
+  --background-color: #{$background-color--light};
+  --text-color: #{$text-color--light};
+  --second-text-color: #{$second-text--light};
+  --special-btn: #{$special-btn--light};
+  --number-btn: #{$number-btn--light}
+}
+
+* {
+  transition: 0.3s;
+}
+
 body {
   background-color: #E5E5E5;
 }
 .App {
   display: flex;
+  height: 100vh;
 }
